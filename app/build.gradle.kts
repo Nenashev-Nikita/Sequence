@@ -49,6 +49,9 @@ android {
 
 dependencies {
 
+	implementation(libs.koin.core)
+	implementation(libs.koin.android)
+
 	implementation(libs.retrofit.moshi)
 	implementation(libs.retrofit.moshi.kotlin)
 	implementation(libs.retrofit.moshi.adapters)
