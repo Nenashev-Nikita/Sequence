@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "Sequence"
 include(":app")
+
+include(":component:network")
+
+include(":design")
