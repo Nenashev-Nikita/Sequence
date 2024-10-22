@@ -35,6 +35,8 @@ android {
 		jvmTarget = "17"
 	}
 	buildFeatures {
+		buildConfig = true
+		viewBinding = true
 		compose = true
 	}
 	composeOptions {
@@ -48,6 +50,22 @@ android {
 }
 
 dependencies {
+	implementation(project(":component:network"))
+
+	implementation(project(":feature:film"))
+	implementation(project(":feature:detail"))
+
+	implementation(project(":shared:movie"))
+
+	implementation(libs.androidx.navigation.fragment)
+	implementation(libs.androidx.navigation.ui)
+	implementation(libs.cicerone)
+	implementation(libs.androidx.fragment.ktx)
+
+	implementation(libs.androidx.navigation.fragment)
+	implementation(libs.androidx.navigation.ui)
+	implementation(libs.cicerone)
+	implementation(libs.androidx.fragment.ktx)
 
 	implementation(libs.koin.core)
 	implementation(libs.koin.android)
@@ -57,6 +75,9 @@ dependencies {
 	implementation(libs.retrofit.moshi.adapters)
 	implementation(libs.retrofit.converter.moshi)
 	implementation(libs.retrofit.converter.scalars)
+
+	implementation(libs.cicerone)
+	implementation(libs.androidx.fragment.ktx)
 
 	// Compose
 	implementation(libs.androidx.material3)
