@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="title_appbar">Фильмы</string>
+	<string name="genres">Жанры</string>
+	<string name="biography">Биография</string>
+	<string name="action_movie">Боевик</string>
+	<string name="detective">Детектив</string>
+	<string name="drama">Драма</string>
+	<string name="comedy">Комедия</string>
+	<string name="crime">Криминал</string>
+	<string name="melodrama">Мелодрама</string>
+	<string name="musical">Мюзикл</string>
+	<string name="adventures">Приключения</string>
+	<string name="thriller">Триллер</string>
+	<string name="horrors">Ужасы</string>
+	<string name="fantasy">Фантастика</string>
+
+	<string name="film_genres">%1$s, </string>
+	<string name="film_year">%1$s год</string>
+	<string name="film_rating">%1$s КиноПоиск</string>
+</resources>
