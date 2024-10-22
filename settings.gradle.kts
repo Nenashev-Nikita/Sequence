@@ -29,3 +29,4 @@ include(":design")
 include(":shared:movie")
 
 include(":feature:film")
+include(":feature:detail")
