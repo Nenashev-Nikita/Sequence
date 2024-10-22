@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="title_appbar">Фильмы</string>
+	<string name="genres">Жанры</string>
+	<string name="cinema_title">Фильмы</string>
+	<string name="biography">биография</string>
+	<string name="action_movie">боевик</string>
+	<string name="detective">детектив</string>
+	<string name="drama">драма</string>
+	<string name="comedy">комедия</string>
+	<string name="crime">криминал</string>
+	<string name="melodrama">мелодрама</string>
+	<string name="musical">мюзикл</string>
+	<string name="adventures">приключения</string>
+	<string name="thriller">триллер</string>
+	<string name="horrors">ужасы</string>
+	<string name="fantasy">фантастика</string>
+	<string name="repeat">Повторить</string>
+	<string name="error">Ошибка подключения к сети</string>
+</resources>
