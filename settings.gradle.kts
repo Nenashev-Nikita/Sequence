@@ -27,3 +27,5 @@ include(":component:network")
 include(":design")
 
 include(":shared:movie")
+
+include(":feature:film")
