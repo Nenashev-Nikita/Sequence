@@ -1,8 +1,11 @@
 package com.example.sequence
 
 import android.app.Application
+import com.example.sequence.component.network.di.networkModule
+import com.example.sequence.di.appModule
+import com.example.sequence.feature.detail.di.detailModel
+import com.example.sequence.feature.film.di.filmModel
 import org.koin.android.ext.koin.androidContext
-import org.koin.android.ext.koin.androidFileProperties
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
@@ -12,10 +15,13 @@ class App : Application() {
 	override fun onCreate() {
 		super.onCreate()
 		startKoin {
-			androidLogger(Level.ERROR)
+			androidLogger(Level.DEBUG)
 			androidContext(this@App)
-			properties(mapOf())
-			androidFileProperties()
+
+			modules(networkModule)
+			modules(filmModel)
+			modules(appModule)
+			modules(detailModel)
 		}
 	}
 }
