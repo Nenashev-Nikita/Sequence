@@ -5,4 +5,4 @@ import com.example.sequence.shared.movie.domain.entity.Film
 
 class GetAllFilmsUseCase(
 	private val repository: FilmRepository
-) : suspend () -> List<Film> by repository::getAllFilmsRepository
+) : suspend () -> List<Film> by repository::getAllFilms

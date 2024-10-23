@@ -7,8 +7,8 @@ class FilterFilmsByGenresUseCase(
 	private val repository: FilmRepository
 ) {
 
-	operator fun invoke(genre: String?): List<Film> {
-		val films = repository.getMoviesCertainGenre()
+	suspend operator fun invoke(genre: String?): List<Film> {
+		val films = repository.getAllFilms()
 
 		return if (genre != null) {
 			films.filter {

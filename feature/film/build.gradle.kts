@@ -38,6 +38,7 @@ android {
 dependencies {
 	implementation(project(":design"))
 	implementation(project(":component:network"))
+	implementation(project(":component:presentation"))
 	implementation(project(":shared:movie"))
 
 	implementation(libs.coil.compose)

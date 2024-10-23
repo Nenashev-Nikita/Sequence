@@ -26,14 +26,17 @@ class FilmFragment : Fragment() {
 	override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View =
 		ComposeView(requireContext()).apply {
 			setContent {
-				if (savedInstanceState == null) viewModel.loadFilms()
+				viewModel.loadFilms()
 
 				Screen {
 					FilmScreen(
-						uiStateFlow = viewModel.uiState,
-						onReloadFilms = viewModel::getFilms,
-						onGenres = viewModel::genresCheckChange,
-						navigateToDetail = viewModel::getDetail,
+						filmsLiveData = viewModel.films,
+						genreLiveData = viewModel.genre,
+						isLoadingLiveData = viewModel.isLoading,
+						isErrorLiveData = viewModel.error,
+						onReloadFilms = viewModel::loadFilms,
+						onGenres = viewModel::filterFilmsByGenres,
+						navigateToDetail = viewModel::openFilmDetails,
 					)
 				}
 			}

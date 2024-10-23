@@ -23,6 +23,7 @@ rootProject.name = "Sequence"
 include(":app")
 
 include(":component:network")
+include(":component:presentation")
 
 include(":design")
 
